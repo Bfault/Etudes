@@ -37,6 +37,102 @@
     Un nombre est rationnel si et seulement si il admet une écriture décimale finie ou périodique.
 \end{proposition}
 
+\begin{demonstration}
+    Démontrons que si un nombre à une partie décimale finie ou périodique, alors il est rationnel.
+
+    \vspace{1em}
+
+    a) partie décimale finie
+
+    \vspace{0.5em}
+
+    1. Supposons que x soit un nombre réel avec une partie décimale finie.
+    x peut s'écrire sous la forme:
+    \begin{align*}
+        x = a.b_1b_2...b_n
+    \end{align*}
+    Ou $a \in \Z$ est la partie entière et $b_1b_2...b_n$ avec $n \in \N$ représente les chiffres de la partie décimale finie.
+    
+    \vspace{0.5em}
+
+    2. On peut écrire x comme:
+    \begin{align*}
+        x = a + \dfrac{b_1b_2...b_n}{10^n}
+    \end{align*}
+
+    Ici, a est un entier et $\dfrac{b_1b_2...b_n}{10^n}$ un nombre rationnel.
+
+    \begin{rdem}
+        La somme d'un entier (nombre rationnel) et d'un nombre rationnel est un nombre rationnel.
+    \end{rdem}
+
+    \vspace{1em}
+
+    b) partie décimale périodique
+
+    \vspace{0.5em}
+
+    1. Supposons que x soit un nombre réel avec une partie décimale périodique.
+    x peut s'écrire sous la forme:
+    \begin{align*}
+        x = a.b_1b_2...b_n\overline{c_1c_2...c_m}
+    \end{align*}
+    où $a \in \Z$ est la partie entière, $b_1b_2...b_n$ sont les chiffres non répétitifs initiaux, et
+    $\overline{c_1c_2...c_m}$ est le bloc périodique.
+
+    \vspace{0.5em}
+
+    2. Pour simplifier la démonstration, on peut isoler la partie périodique. Posons:
+    \begin{align*}
+        y = 0.\overline{c_1c_2...c_m}
+    \end{align*}
+    \vspace{0.5em}
+    
+    3. On multiplie y par $10^m$, où m est la longeur de la période.
+    \begin{align*}
+        &10^m y = c_1c_2...c_m + y \\
+        \iff& 10^m y - y = c_1c_2...c_m \\
+        \iff& y(10^m - 1) = c_1c_2...c_m \\
+        \iff& y = \dfrac{c_1c_2...c_m}{10^m - 1} \\
+    \end{align*}
+    y est donc rationnel.
+
+    \vspace{0.5em}
+
+    4. On peut réexprimer x
+    \begin{align*}
+        x = a + \dfrac{b_1b_2...b_n}{10^n} + y
+    \end{align*}
+
+    \begin{rdem}
+        La somme de nombre rationnel donne un nombre rationnel.
+    \end{rdem}
+    
+    \begin{rdem}
+        Ainsi si un nombre à une partie décimale finie ou périodique, alors il est rationnel.
+    \end{rdem}
+
+
+\end{demonstration}
+
+\begin{demonstration}
+    Démontrons que si un nombre est rationnel, alors sa partie décimale est finie ou périodique.
+
+    Supposons que x est un nombre rationnel ainsi il s'écrit sous la forme
+    $x = \dfrac{p}{q}$ avec $p \in \Z \text{ et } q \in \N^*$
+
+    Lorsque qu'on effectue la division euclidienne $\dfrac{p}{q}$ deux cas se présentent:
+
+    La division se termine par un nombre fini d'étapes.
+
+    La division ne se termine pas et répète une séquence de chiffres.
+
+    \begin{rdem}
+        Ainsi si un nombre est rationnel, alors sa partie décimale est finie ou périodique.
+    \end{rdem}
+
+\end{demonstration}
+
 \begin{example}
     Prenons $x = 12.34202320232023...$
 
