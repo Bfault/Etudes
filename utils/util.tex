@@ -28,6 +28,15 @@
     \qed%
 }
 
+\newtheorem*{_demonstration*}{Démonstration}
+\newenvironment{demonstration*}[1][]{
+    \begin{_demonstration*}[#1]~\par
+    \vspace*{0.5em}
+}{%
+    \end{_demonstration*}%
+    \qed%
+}
+
 \newenvironment{proprietes}{
     \noindent\textbf{Propriétés}
     \begin{enumerate}
@@ -35,11 +44,39 @@
     \end{enumerate}
 }
 
+\newenvironment{ldefinition}{
+    \begin{definition}~\par
+    \vspace*{0.5em}
+    \begin{enumerate}
+}{
+        \end{enumerate}
+        \end{definition}
+}
+
+\newenvironment{lexample}{
+    \begin{example}~\par
+    \vspace*{0.5em}
+    \begin{enumerate}
+}{
+        \end{enumerate}
+        \end{example}
+}
+
+\newtheorem{_methode}{Méthode}[section]
+\newenvironment{methode}{
+    \begin{_methode}~\par
+    \vspace*{0.5em}
+}{
+        \end{_methode}
+}
+
 \def\N{\mathbb{N}}
 \def\Z{\mathbb{Z}}
 \def\Q{\mathbb{Q}}
 \def\R{\mathbb{R}}
 \def\C{\mathbb{C}}
+\def\K{\mathbb{K}}
+
 
 \newcommand{\lt}{\ensuremath <}
 \newcommand{\gt}{\ensuremath >}
